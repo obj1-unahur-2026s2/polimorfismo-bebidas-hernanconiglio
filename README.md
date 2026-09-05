@@ -5,7 +5,7 @@ Tito pesa actualmente 70 kilos. Tiene la gran ventaja de que cada bebida que tom
 
 * **Whisky**: el whisky provoca sueño, mareo y jaquecas. Un deportista con whisky en su sistema tiene un rendimiento de 0.9 elevado a la dosis consumida, en centímetros cúbicos.
 * **Tereré**: el tereré es diurético, laxante y estimulante del rendimiento. Un deportista con tereré en su sistema tiene un rendimiento de 0.1 por cada centímetro cúbico de dosis. Sin embargo, nunca rinde menos que 1.
-* **Cianuro**: el cianuro no favorece al rendimiento, sino que el deportista, luego de consumirlo queda como muerto, llenos de abulia y de marasmo. Con cianuro, el rendimiento es siempre 0.
+* **Cianuro**: el cianuro no favorece al rendimiento, sino que el deportista, luego de consumirlo queda como muerto, llenos de abulia y de marasmo. Con cianuro, el rendimiento será 0 (cero) si el peso del deportista es 70 o menos. Si es mas de 70 1% del peso + la dosis.
 
 > 1. Hacer que Tito tome cierta cantidad de una bebida, con el mensaje `consumir(cantidad, bebida)`
 > 2. Conocer la velocidad de Tito, mediante el mensaje `velocidad()`.
@@ -32,3 +32,5 @@ Cabe destacar que para lograrlo, las sustancias deben entender el mismo mensaje,
 
 
 También hay que diseñar qué datos son _atributos_ y cuáles _métodos de consulta_ de `tito`. El enunciado pide que `velocidad` **no** sea un atributo ya que se obtiene de un cálculo que involucra el rendimiento, inercia y peso de `tito`.
+
+Agregar a pepe, otro voluntario, que pesa inicialmente 80, tiene 30 años. pepe debe poder cumplir años y se diferencia de tito en que para calcular su velocidad si tiene más de 30 entonces le resta 10 de velocidad. 
